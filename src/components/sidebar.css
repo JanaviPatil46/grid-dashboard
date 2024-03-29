@@ -1,0 +1,126 @@
+.grid-container{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas: "side header" "side main";
+}
+.header{
+    background-color: #ebeaea;
+    grid-area: header;
+   
+}
+.sidebar{
+    background-color: #1c1f23;
+    grid-area: side;
+    color: #fff;
+    transition: 0.3s all;
+}
+.main{
+    padding: 25px;
+    background-color: #c3c5ca;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px ;
+    grid-template-areas:"c1 c2 c3" "c4 c4 c5" "c4 c4 c6"
+}
+.card{
+    background-color: #f6f7f9;
+    border-radius: 10px;
+}
+.card:nth-child(1){
+    grid-area: c1;
+}
+.card:nth-child(2){
+    grid-area: c2;
+}
+.card:nth-child(3){
+    grid-area: c3;
+}
+.card:nth-child(4){
+    grid-area: c4;
+}
+.card:nth-child(5){
+    grid-area: c5;
+}
+.card:nth-child(6){
+    grid-area: c6;
+}
+@media (max-width:768px) {
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+        grid-template-areas: initial;
+    }
+    .card{
+        grid-area: initial !important;
+    }
+}
+
+ 
+.menu {
+   
+    list-style-type: none;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+  }
+  
+  .menu li span {
+    margin-left: 25px;
+  }
+  
+  .menu li:hover {
+    background-color: #555;
+    border-radius: 10px;
+  }
+  .menu-link{
+    text-decoration: none;
+  }
+  
+  .menu li svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff; 
+  }
+  
+.sidebar.collapsed {
+    width: 80px; 
+   
+  }
+
+  .sidebar.collapsed .toggle{
+    left: 65px;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  .toggle{
+    position: absolute;
+    top: 8%;
+    left: 180px;
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transform: translateY(-50%) rotate(0deg);
+    font-size: 18px;
+  }
+  .sidebar.collapsed .hidden-text{
+    display: none;
+  } 
+  
+
+  
