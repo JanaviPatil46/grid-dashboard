@@ -6,7 +6,7 @@ export const menuItems = [
     title: 'Home',
     icon: faHome,
     path: '/',
-    submenus: []
+    
   },
   {
     title: 'Users',
@@ -17,19 +17,31 @@ export const menuItems = [
         title: 'Profile',
         path: '/users/profile',
         icon: faUserCircle
-      }
+      },
+     
     ]
   },
   {
     title: 'Settings',
     icon: faCog,
     path: '/settings',
-    submenus: []
+   
   },
   {
-    title: 'Notifications',
+    title: 'Notifications ',
     icon: faBell,
     path: '/notifications',
-    submenus: []
+    submenus: [
+      {
+        title: 'Profile',
+        path: '/users/profile',
+        icon: faUserCircle
+      },
+      {
+        title: 'Settings',
+        path: '/users/settings',
+        icon: faCog
+      },
+    ]
   },
 ];
