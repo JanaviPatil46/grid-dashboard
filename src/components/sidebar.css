@@ -119,12 +119,12 @@
 
 
 .sidebar.collapsed {
-    width: 80px; 
+    width: 60px; 
    
   }
 
   .sidebar.collapsed .toggle{
-    left: 65px;
+    left: 45px;
     transform: translateY(-50%) rotate(180deg);
   }
 
@@ -141,8 +141,9 @@
     transform: translateY(-50%) rotate(0deg);
     font-size: 18px;
   }
-  .sidebar.collapsed .hidden-text{
+  .sidebar.collapsed .hidden-text, .sidebar.collapsed .submenu-toggle{
     display: none;
+    opacity: 1;
   } 
   
  

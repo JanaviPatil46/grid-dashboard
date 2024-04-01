@@ -35,7 +35,7 @@ function Sidebar() {
                 </div>
                 <div className='logo-container' style={{display:'flex',gap:'20px',margin:'30px 0 0 10px',alignItems:'center'}}>
                     <span className="image">
-                        <img src={logo} alt="" />
+                        <img src={logo} alt=""  style={{width:'40px', height:'40px'}} />
                     </span>
                     <div className="text hidden-text">
                         <span className="name">SNP</span>
