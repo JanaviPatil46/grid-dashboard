@@ -45,3 +45,18 @@
   .dark-theme .side-link a{
     color: #fff;
   }
+  .right-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%; /* Adjust width as needed */
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+    z-index: 999; /* Ensure the form appears above other content */
+  }
+  @media screen and (max-width: 768px) {
+    .right-sidebar{
+      width: 100%;
+    }
+  }

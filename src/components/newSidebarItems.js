@@ -15,10 +15,11 @@ import { MdMoreTime } from "react-icons/md";
 import { PiSuitcaseSimpleBold } from "react-icons/pi";
 
 import { FaPaperPlane } from "react-icons/fa";
-
+ import AccountForm from '../pages/AccountForm';
+ import ContactForm from '../pages/ContactForm';
 const newSidebarItems = [
-    { icon: AiOutlineUser, text: 'Account' ,path:'/accounts',},
-    { icon: SlEnvolope, text: 'Contact',path:'/contacts' },
+    { icon: AiOutlineUser, text: 'Account' ,path:'/accounts',formComponent: AccountForm},
+    { icon: SlEnvolope, text: 'Contact',path:'/contacts' ,formComponent: ContactForm},
     { icon: HiOutlineDocumentPlus, text: 'Document', path:'/documentss' },
     { icon: CgFolderAdd, text: 'Folder', path:'/folder' },
     { icon: GoBook, text: 'Page', path:'/pages' },
