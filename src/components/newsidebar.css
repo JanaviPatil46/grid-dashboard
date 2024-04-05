@@ -1,0 +1,90 @@
+.content {
+  overflow-y: auto;
+  height: 83vh;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.content-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-link {
+  margin-bottom: 15px;
+}
+
+.side-link a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.new-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.nav-text {
+  font-size: 16px;
+}
+
+.side-link {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.side-link:last-child {
+  border-bottom: none;
+}
+
+.accounts-container {
+  background-color: #FAF9F6;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* grid-template-rows: auto;   */
+  width: 40%;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.dark-theme .side-link a {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .accounts-container{
+    width: 100%;
+  }
+}
+
+.form-container {
+  background-color: #FAF9F6;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* grid-template-rows: auto;   */
+  width: 40%;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.form {
+  border: 2px solid red;
+  background-color: white;
+ height: 50vh;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
