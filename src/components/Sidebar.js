@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import "./sidebar.css";
-import { FaAngleLeft, FaAngleDown, FaAngleUp, FaMoon, FaSun,FaBars } from "react-icons/fa";
+import { FaAngleLeft, FaAngleDown, FaAngleUp, FaMoon, FaSun, FaBars } from "react-icons/fa";
 import logo from '../img/logo.svg'
 import { menuItems } from './menuItems';
 import Switch from 'react-switch';
@@ -37,12 +37,14 @@ function Sidebar() {
                 <Header />
             </header>
             <section className={`sidebar  ${collapsed ? 'collapsed' : ''}`}>
-                <div className="toggle">
-                    <FaAngleLeft style={{ color: "white" }} onClick={toggleSidebar} />
-                </div>
-                <div className='sidebar-content' style={{ width: '250px' }}>
+                <div className='sidebar-content' style={{ width: '250px'}}>
+                    <div className="toggle">
+                        <FaAngleLeft style={{ color: "white" }} onClick={toggleSidebar} />
+                    </div>
+
 
                 </div>
+                <div className='sidebar-content-items'>
                     <div className='logo-container' style={{ display: 'flex', gap: '20px', margin: '25px 0 0 10px', alignItems: 'center' }}>
                         <span className="image">
                             <img src={logo} alt="" style={{ width: '40px', height: '40px' }} />
@@ -116,18 +118,18 @@ function Sidebar() {
                             </ul>
                         </div>
                     </div>
-               
-               
-            
+
+                </div>
+
                 <div className="sidebar-toggle-btn" >
-                <FaBars />
-            </div>
+                    <FaBars />
+                </div>
             </section>
             <main className="main">
                 {/* <Routing/> */}
                 <Outlet />
             </main>
-           
+
         </div>
     );
 }

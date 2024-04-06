@@ -352,7 +352,7 @@
 @media screen and (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 50px 80px auto;
     grid-template-areas: "side" "nav" "main";
   }
 
@@ -360,7 +360,7 @@
     display: block;
   }
 
-  .sidebar-content {
+  .sidebar-content-items {
     display: none;
   }
 
