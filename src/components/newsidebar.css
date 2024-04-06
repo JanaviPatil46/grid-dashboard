@@ -1,62 +1,63 @@
 .content {
-  overflow-y: auto;
-  height: 83vh;
-    padding: 20px;
-    margin-top: 10px;
-  }
-  
-  .content-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .side-link {
-    margin-bottom: 15px;
-  }
-  
-  .side-link a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .new-icon {
-    width: 20px; 
-    height: 20px;
-    margin-right: 10px;
-  }
-  
-  .nav-text {
-    font-size: 16px;
-  }
-  .side-link {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #ccc; 
-    padding-bottom: 15px; 
-  }
-  
-  .side-link:last-child {
-    border-bottom: none; 
-  }
-
- 
-  .dark-theme .side-link a{
-    color: #fff;
-  }
-  .right-sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 40%; /* Adjust width as needed */
-    height: 100vh;
-    background-color: #ffffff;
-    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
-    z-index: 999; /* Ensure the form appears above other content */
-  }
-  @media screen and (max-width: 768px) {
-    .right-sidebar{
-      width: 100%;
+    overflow-y: auto;
+    height: 83vh;
+      padding: 20px;
+      margin-top: 10px;
     }
-  }
+    
+    .content-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .side-link {
+      margin-bottom: 15px;
+    }
+    
+    .side-link a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .new-icon {
+      width: 20px; 
+      height: 20px;
+      margin-right: 10px;
+    }
+    
+    .nav-text {
+      font-size: 16px;
+    }
+    .side-link {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc; 
+      padding-bottom: 15px; 
+    }
+    
+    .side-link:last-child {
+      border-bottom: none; 
+    }
+  
+   
+    .dark-theme .side-link a{
+      color: #fff;
+    }
+    .right-sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 40%; /* Adjust width as needed */
+      height: 100vh;
+      background-color: #ffffff;
+      box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+      z-index: 999; /* Ensure the form appears above other content */
+    }
+    @media screen and (max-width: 768px) {
+      .right-sidebar{
+        width: 100%;
+      }
+    }
+  

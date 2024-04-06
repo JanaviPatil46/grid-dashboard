@@ -42,7 +42,7 @@ function Sidebar() {
                 </div>
                 <div className='sidebar-content' style={{ width: '250px' }}>
 
-
+                </div>
                     <div className='logo-container' style={{ display: 'flex', gap: '20px', margin: '25px 0 0 10px', alignItems: 'center' }}>
                         <span className="image">
                             <img src={logo} alt="" style={{ width: '40px', height: '40px' }} />
@@ -116,7 +116,7 @@ function Sidebar() {
                             </ul>
                         </div>
                     </div>
-                </div>
+               
                
             
                 <div className="sidebar-toggle-btn" >
