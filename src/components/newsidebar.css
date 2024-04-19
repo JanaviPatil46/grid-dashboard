@@ -1,10 +1,31 @@
+@import url('../common.css');
 .content {
     overflow-y: auto;
     height: 83vh;
       padding: 20px;
       margin-top: 10px;
     }
+    .content::-webkit-scrollbar {
+      /* width: 2px; */
+      display: none;
+    }
     
+    
+    /* .content::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    
+    
+    .content::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    
+    
+    .content::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+     */
     .content-list {
       list-style: none;
       padding: 0;
@@ -19,7 +40,8 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: #333;
+      /* color: #333; */
+      color: var(--sidebar-text-color)
     }
     
     .new-icon {
@@ -42,9 +64,7 @@
     }
   
    
-    .dark-theme .side-link a{
-      color: #fff;
-    }
+   
     .right-sidebar {
       position: fixed;
       top: 0;

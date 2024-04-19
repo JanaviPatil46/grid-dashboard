@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import "./sidebar.css";
-import { FaAngleLeft, FaAngleDown, FaAngleUp, FaMoon, FaSun, FaBars } from "react-icons/fa";
+import { FaAngleLeft, FaAngleDown, FaAngleUp, FaBars, FaMoon, FaSun, } from "react-icons/fa";
+
 import logo from '../img/logo.svg'
 import { menuItems } from './menuItems';
-import Switch from 'react-switch';
+
 import { IoIosLogOut } from "react-icons/io";
 import './header.css'
 import Header from './Header';
-// import Routing from './Routing';
+import Switch from 'react-switch';
 
 
 function Sidebar() {
@@ -25,19 +26,26 @@ function Sidebar() {
         setOpenSubMenu(openSubMenu === index ? null : index);
 
     };
-    const [themeMode, setThemeMode] = useState('light');
-    const toggleThemeMode = () => {
-        const newThemeMode = themeMode === 'light' ? 'dark' : 'light';
-        setThemeMode(newThemeMode);
-    };
 
+    const [theme, setTheme] = useState("light-theme")
+    const toggleTheme = () => {
+        if (theme === "dark-theme") {
+            setTheme('light-theme')
+        } else {
+            setTheme('dark-theme')
+        }
+    }
+    useEffect(() => {
+        document.body.className = theme;
+    }, [theme]);
     return (
-        <div className={`grid-container ${themeMode === 'dark' ? 'dark-theme' : ''}`}>
+
+        <div className='grid-container'>
             <header className="header">
                 <Header />
             </header>
             <section className={`sidebar  ${collapsed ? 'collapsed' : ''}`}>
-                <div className='sidebar-content' style={{ width: '250px'}}>
+                <div className='sidebar-content' style={{ width: '250px' }}>
                     <div className="toggle">
                         <FaAngleLeft style={{ color: "white" }} onClick={toggleSidebar} />
                     </div>
@@ -97,14 +105,14 @@ function Sidebar() {
                                 </li>
                                 <li className="theme-mode-toggle">
                                     <span style={{ fontSize: '20px' }}>
-                                        {themeMode === 'light' ? <FaMoon className='mode-icon' /> : <FaSun className='mode-icon' />}
+                                        {theme === 'light-theme' ? <FaMoon className='mode-icon' /> : <FaSun className='mode-icon' />}
                                     </span>
                                     <span className="hidden-text" style={{ marginLeft: '15px' }}>
-                                        {themeMode === 'light' ? ' Dark Mode' : 'Light Mode'}
+                                        {theme === 'light-theme' ? ' dark-theme' : 'light-theme'}
                                     </span>
                                     <Switch
-                                        checked={themeMode === 'dark'}
-                                        onChange={toggleThemeMode}
+                                        onChange={toggleTheme}
+                                        checked={theme === "dark-theme"}
                                         onColor="#007bff"
                                         offColor="#ccc"
                                         uncheckedIcon={false}
@@ -114,7 +122,7 @@ function Sidebar() {
                                         className='mode-switch'
                                     />
                                 </li>
-
+                              
                             </ul>
                         </div>
                     </div>
@@ -126,7 +134,7 @@ function Sidebar() {
                 </div>
             </section>
             <main className="main">
-                {/* <Routing/> */}
+
                 <Outlet />
             </main>
 

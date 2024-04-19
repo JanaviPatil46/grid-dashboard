@@ -1,3 +1,7 @@
+@import url('../common.css');
+.name{
+  color: var(--text-color);
+}
 .grid-container {
   margin: 0;
   padding: 0;
@@ -9,13 +13,15 @@
 }
 
 .header {
-  background-color: #ebeaea;
+  
+  background-color: var(--header-color);
   grid-area: nav;
 
 }
 
 .sidebar {
-  background-color: #FFF;
+
+  background-color: var(--sidebar-color);
   grid-area: side;
   transition: 0.3s all;
   position: relative;
@@ -29,6 +35,7 @@
 
 .sidebar-items::-webkit-scrollbar {
   width: 2px;
+  /* display: none; */
 }
 
 
@@ -49,13 +56,15 @@
 
 .main {
   padding: 20px;
-  background-color: #c3c5ca;
+  color: var(--text-color);
+  background-color: var(--main-color);
   grid-area: main;
 
 }
 
 .card {
-  background-color: #f6f7f9;
+ 
+  background-color: var(--card-color);
   border-radius: 10px;
   color: #000;
 }
@@ -129,7 +138,8 @@
 .menu-link,
 .submenu-link,
 .logout-link {
-  color: #000;
+ 
+  color: var(--links-color);
   text-decoration: none;
   display: flex;
   margin-bottom: 5px;
@@ -142,8 +152,8 @@
 .submenu-link:hover,
 .logout-link:hover {
   border-radius: 10px;
-  color: #FFF;
-  background-color: blue;
+  color: var(--links-hover-color);
+ background-color: var(--links-background);
 }
 
 
@@ -176,7 +186,7 @@
   left: 235px;
   height: 20px;
   width: 20px;
-  background-color: blue;
+  background-color: var(--toggle-btn);
   border-radius: 50%;
   padding: 5px;
   cursor: pointer;
@@ -295,30 +305,6 @@
   margin-bottom: 10px;
 }
 
-.dark-theme .sidebar {
-  background-color: #000;
-  color: #fff;
-}
-
-.dark-theme .main {
-  background-color: #333;
-  color: #fff;
-}
-
-.dark-theme .header {
-  background-color: #494F55;
-  color: #fff;
-}
-
-.dark-theme .menu-link,
-.dark-theme .submenu-link,
-.dark-theme .logout-link {
-  color: #FFF;
-}
-
-.dark-theme .toggle {
-  background-color: gray;
-}
 
 
 

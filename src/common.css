@@ -1,0 +1,24 @@
+.light-theme{
+    --header-color:#ebeaea;
+    --sidebar-color: #FFF;
+    --main-color: #c3c5ca;
+    --card-color: #f6f7f9;
+    --links-color:#000;
+    --links-hover-color:#FFF;
+    --toggle-btn:blue;
+    --text-color:#000;
+    --links-background:blue;
+    --sidebar-text-color:#333;
+  }
+  .dark-theme{
+    --header-color: #494F55;
+    --sidebar-color: #000;
+    --main-color: #333;
+    --card-color: #f6f7f9;
+    --links-color:#FFF;
+    --links-hover-color:#000;
+    --toggle-btn:gray;
+    --text-color:#FFF;
+    --links-background:#EEF5FF;
+    --sidebar-text-color:#FFF;
+  }
