@@ -8,7 +8,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: 80px 1fr;
+  grid-template-rows: 8% 1fr;
   grid-template-areas: "side nav" "side main";
 }
 
@@ -34,8 +34,8 @@
 }
 
 .sidebar-items::-webkit-scrollbar {
-  width: 2px;
-  /* display: none; */
+  /* width: 2px; */
+  display: none;
 }
 
 
@@ -182,7 +182,7 @@
 
 .toggle {
   position: absolute;
-  top: 11%;
+  top: 8%;
   left: 235px;
   height: 20px;
   width: 20px;

@@ -9,6 +9,7 @@
     --text-color:#000;
     --links-background:blue;
     --sidebar-text-color:#333;
+    --search-icons-color:#000;
   }
   .dark-theme{
     --header-color: #494F55;
@@ -21,4 +22,5 @@
     --text-color:#FFF;
     --links-background:#EEF5FF;
     --sidebar-text-color:#FFF;
+    --search-icons-color:#63e657;
   }

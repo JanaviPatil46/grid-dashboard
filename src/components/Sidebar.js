@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import "./sidebar.css";
 import { FaAngleLeft, FaAngleDown, FaAngleUp, FaBars, FaMoon, FaSun, } from "react-icons/fa";
 
@@ -10,7 +10,7 @@ import { IoIosLogOut } from "react-icons/io";
 import './header.css'
 import Header from './Header';
 import Switch from 'react-switch';
-
+import Routing from './Routing'
 
 function Sidebar() {
     const [collapsed, setCollapsed] = useState(false);
@@ -134,8 +134,8 @@ function Sidebar() {
                 </div>
             </section>
             <main className="main">
-
-                <Outlet />
+<Routing/>
+                {/* <Outlet /> */}
             </main>
 
         </div>

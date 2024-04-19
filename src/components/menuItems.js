@@ -1,17 +1,12 @@
 import { AiOutlineAppstoreAdd } from "react-icons/ai";
 import {AiOutlineHome} from "react-icons/ai"
 import { MdOutlineMail } from "react-icons/md";
+import { GoDotFill } from "react-icons/go";
 
-import {  MdOutlineMiscellaneousServices, MdAccountBalance } from "react-icons/md";
 
 import { TfiLayersAlt } from "react-icons/tfi";
 import {  IoPeopleOutline} from "react-icons/io5";
 import { ImInsertTemplate } from "react-icons/im";
-import { FiHome } from "react-icons/fi";
-import { FaUserTag} from "react-icons/fa";
-import { IoIosContacts } from "react-icons/io";
-import { FcParallelTasks } from "react-icons/fc";
-
 
 
 export const menuItems = [
@@ -38,13 +33,14 @@ export const menuItems = [
       {
         title: "Accounts",
         path: "/accounts",
-        icon: <MdAccountBalance />,
+        icon: <GoDotFill />
+        ,
         
       },
       {
         title: "Contacts",
         path: "/contacts",
-        icon: <IoIosContacts />,
+        icon: <GoDotFill />,
       },
     ],
   },
@@ -55,22 +51,22 @@ export const menuItems = [
       {
         title: "Tasks",
         path: "/marketplace",
-        icon: <FcParallelTasks />,
+        icon: <GoDotFill />,
       },
       {
         title: "Jobs",
         path: "/firmtemplates",
-        icon: <FiHome />,
+        icon: <GoDotFill />,
       },
       {
         title: "Jobrecurrences",
         path: "/tags",
-        icon: <FiHome />,
+        icon: <GoDotFill />,
       },
       {
         title: "Pipelines",
         path: "/pipeline",
-        icon: <FiHome />,
+        icon: <GoDotFill />,
       },
      
     ],
@@ -84,18 +80,18 @@ export const menuItems = [
       {
         title: "Firm templates",
         path: "/submenu2",
-        icon: <FiHome />,
+        icon: <GoDotFill />,
       },
      
       {
         title: "Tags",
         path: "/tags",
-        icon: <FaUserTag />,
+        icon: <GoDotFill />,
       },
       {
         title: "Services",
         path: "/submenu2",
-        icon: <MdOutlineMiscellaneousServices />,
+        icon: <GoDotFill />,
       },
      
     ],
